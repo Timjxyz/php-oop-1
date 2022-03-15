@@ -33,6 +33,8 @@ class Movie {
 </head>
 <body>
     <?php
+
+    //Primo oggetto film
     $starWars= new Movie('Star Wars','Guerre Stellari',false);
     echo "<div class='container'>";
             echo "<h1>" . $starWars->get_titles() . "</h1>";
@@ -40,7 +42,7 @@ class Movie {
             echo "<h2>".'Relase Date : '.$starWars->releaseDate='1997/05/25'."</h2>";
             echo "<p>".'<strong> Overview: </strong>'.$starWars->overview='Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.'."</p>";
     echo "</div>";
-
+    //Secondo oggetto film
     $gremlins= new Movie('Gremlins','Gremlins',false);
     echo "<div class='container'>";
             echo "<h1>" . $gremlins->get_titles() . "</h1>";
@@ -49,6 +51,7 @@ class Movie {
             echo "<p>".'<strong> Overview: </strong>'.$gremlins->overview='When Billy Peltzer is given a strange but adorable pet named Gizmo for Christmas, he inadvertently breaks the three important rules of caring for a Mogwai, and unleashes a horde of mischievous gremlins on a small town.'."</p>";
     echo "</div>";
 
+        //Terzo ogetto film
     $number23= new Movie('The Number 23','Il Numero 23',true);
     echo "<div id='adult' class='container'>";
             echo "<h1>" . $number23->get_titles() . "</h1>";
